@@ -1,0 +1,27 @@
+#Title {
+  padding-left: 1%;
+}
+#today {
+    padding:1%;
+}
+#upcoming {
+    padding:1%;
+}
+#past {
+    padding:1%;
+}
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul li a {
+    display: inline-block;
+}
+iframe {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
