@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Competition Updates</title>
+	    <meta name="title" content="Competition updates for Dunman High School">
+	    <link rel="icon" href="http://dunmanhigh.moe.edu.sg/wp-content/uploads/2016/06/cropped-favicon-192x192.png" sizes="192x192" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="/static/css/materialize.css">
+		<link rel="stylesheet" href="/static/css/main.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+
+<body>
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="/">About</a></li>
+      <li class="divider"></li>
+      <li><a href="https://github.com/DHSYongJun/SavingtheWorld2">GitHub</a></li>
+    </ul>
+	<nav class="nav-extended nav-center">
+		<div class="nav-wrapper">
+		    <a id="Title" class="brand-logo left">Competition Updates</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<a class="dropdown-trigger" href="#!" data-target="dropdown1"><i class="material-icons right">more_vert</i></a></li>
+			</ul>
+		</div>
+		<div class="nav-content">
+			<ul class="tabs tabs-transparent">
+				<li class="tab"><a class="active" href="#today">Today</a></li>
+				<li class="tab"><a href="#upcoming">Upcoming</a></li>
+				<li class="tab"><a href="#past">Past</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="today" class="col s12 m4 l8">
+        <iframe src="/today/"></iframe>
+	</div>
+	<div id="upcoming" class="col s12">
+        <iframe src="/upcoming/"></iframe>
+	</div>
+	<div id="past" class="col s12">
+        <iframe src="/past/"></iframe>
+	</div>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large waves-effect waves-light" href="/form/">
+            <i class="large material-icons">add</i>
+        </a>
+    </div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/js/materialize.min.js"></script>
+	<script src="/static/js/main.js"></script>
+</body>
+</html>
