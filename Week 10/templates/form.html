@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="/static/css/materialize.css">
 		<link rel="stylesheet" href="/static/css/form.css">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 
 <body>
@@ -19,39 +19,40 @@
 		<div class="row">
 			<div class="s12">
 				<div class="card-panel">
+
 				    <form action = "/form/" method = "POST">
     					<span>
     						<div class="row">
     							<div class="input-field col s12">
-    								<input id="name" type="text" class="validate" name="name">
+    								<input id="name" type="text" class="validate" name="name" required>
     								<label for="name">Name of Competition</label>
     							</div>
     						</div>
     						<div class="row">
     							<div class="input-field col s12">
-    								<input id="date" type="text" class=" validate datepicker" name="date">
+    								<input id="date" type="text" class=" validate datepicker" name="date" required pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) [0-9]{4}">
     								<label for="date">Date of Competition</label>
     							</div>
     						</div>
     						<div class="row">
     							<div class="input-field col s12">
-    								<input id="location" type="text" class="validate" name="location">
+    								<input id="location" type="text" class="validate" name="location" required>
     								<label for="location">Location</label>
     							</div>
     						</div>
     						<div class="row">
     							<div class="input-field col s12">
-    								<input id="competing" type="text" class="validate" name="competing">
+    								<input id="competing" type="text" class="validate" name="competing" required>
     								<label for="competing">Competing School</label>
     							</div>
     						</div>
     						<div class="row">
     							<div class="input-field col s6">
-    								<input id="start" type="text" class="validate timepicker" name="start">
+    								<input id="start" type="text" class="validate timepicker" name="start" required pattern="(0[0-9]|1[0-2])(:[0-5][0-9]){1} (AM|PM)">
     								<label for="start">Start Time</label>
     							</div>
     							<div class="input-field col s6">
-    								<input id="end" type="text" class="validate timepicker" name="end">
+    								<input id="end" type="text" class="validate timepicker" name="end" required pattern="(0[0-9]|1[0-2])(:[0-5][0-9]){1} (AM|PM)">
     								<label for="end">End Time</label>
     							</div>
     						</div>
